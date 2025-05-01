@@ -1,4 +1,4 @@
-/* Default styles (for larger screens) */
+
 .about-us-container {
     padding: 20px;
     font-family: sans-serif;
@@ -58,24 +58,24 @@
     text-decoration: underline;
   }
   
-  /* Media Query for smaller screens (e.g., phones) */
+  
   @media (max-width: 768px) {
     .about-us-content {
-      flex-direction: column; /* Stack image and text vertically */
-      align-items: stretch; /* Make items take full width */
+      flex-direction: column; 
+      align-items: stretch; 
       gap: 15px;
     }
   
     .about-us-image {
-      max-width: 100%; /* Image takes full width */
+      max-width: 100%; 
     }
   
     .about-us-text {
-      flex: 1; /* Allow text to grow */
+      flex: 1; 
     }
   
     .about-us-text h2 {
-      font-size: 1.5em; /* Adjust font size for smaller screens */
+      font-size: 1.5em; 
     }
   
     .about-us-text p {
@@ -97,7 +97,7 @@
     }
   }
   
-  /* You can add more media queries for even smaller or larger screens */
+
   @media (max-width: 480px) {
     .about-us-text h2 {
       font-size: 1.3em;

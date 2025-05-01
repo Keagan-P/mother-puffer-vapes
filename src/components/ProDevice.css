@@ -1,4 +1,4 @@
-/* src/components/Hero.css */
+
 .hero {
     background-color: #fff;
     color: #000;
@@ -14,11 +14,6 @@
     color: #000;
     font-weight: bold;
     letter-spacing: 0.1em;
-    /*text-shadow: 
-      -1px -1px 0 #000,
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-      1px 1px 0 #000;*/ /* Outline effect using text-shadow */
       font-family: 'Aldrich', 'sans-serif';
   }
   
@@ -29,12 +24,12 @@
       font-weight: 600;
   }
   
-  .hero .video-description-container { /* Style the container div */
-    margin-bottom: 20px; /* Adjust margin as needed */
+  .hero .video-description-container { 
+    margin-bottom: 20px; 
   }
   
-  .hero .video-description { /* Style the p tag */
-    font-size: 1.5rem; /* Adjust font size as needed */
+  .hero .video-description { 
+    font-size: 1.5rem; 
   }
   
   .hero .video-container {
@@ -48,7 +43,7 @@
     display: block;
   }
   
-  /* Responsive adjustments for phones */
+  
   @media (max-width: 768px) {
     .hero {
       padding: 30px 15px;

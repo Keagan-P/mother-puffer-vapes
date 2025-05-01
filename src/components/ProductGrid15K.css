@@ -1,8 +1,8 @@
-* src/components/ProductGrid.css */
+
 .product-grid-section {
     padding: 40px 20px;
     text-align: center;
-    background-color: #f4f4f4; /* Optional background color */
+    background-color: #f4f4f4; 
   }
   
   .product-grid-section h2 {
@@ -13,35 +13,35 @@
   
   .product-grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
-    gap: 30px; /* Spacing between grid items */
-    max-width: 1200px; /* Optional maximum width for the grid */
-    margin: 0 auto; /* Center the grid */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    max-width: 1200px; 
+    margin: 0 auto;
   }
   
   .product-item {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    overflow: hidden; /* To contain rounded corners of image */
-    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+    overflow: hidden; 
+    transition: transform 0.3s ease-in-out; 
   }
   
   .product-item:hover {
-    transform: scale(1.05); /* Enlarge the item on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
   }
   
   .product-item img {
     width: 100%;
     height: auto;
-    max-height: 150px; /* Adjust as needed */
-    object-fit: contain; /* Or cover, depending on your preference */
-    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+    max-height: 150px; 
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out; 
   }
   
   .product-item:hover img {
-    transform: scale(1.1); /* Enlarge the image on hover */
+    transform: scale(1.1); 
   }
   
   .product-info {
@@ -64,7 +64,7 @@
   .product-info .price {
     font-size: 1.1rem;
     font-weight: bold;
-    color: #e91e63; /* Example price color */
+    color: #e91e63; 
     margin-bottom: 15px;
   }
   
@@ -82,15 +82,15 @@
     background-color: #0056b3;
   }
   
-  /* Responsive adjustments for smaller screens */
+  
   @media (max-width: 768px) {
     .product-grid-container {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+      grid-template-columns: repeat(2, 1fr); 
     }
   }
   
   @media (max-width: 576px) {
     .product-grid-container {
-      grid-template-columns: 1fr; /* 1 column on small screens */
+      grid-template-columns: 1fr; 
     }
   }

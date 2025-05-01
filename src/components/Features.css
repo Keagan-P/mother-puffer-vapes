@@ -1,8 +1,8 @@
-/* src/components/Features.css */
+
 .features {
     text-align: center;
     padding: 50px 20px;
-    background-color: white; /* Assuming a dark background */
+    background-color: white; 
     color: #fff;
   }
   
@@ -16,22 +16,22 @@
   .features .features-grid {
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap; /* Allow images to wrap to the next line on smaller screens */
-    gap: 0px; /* Space between images */
+    flex-wrap: nowrap; 
+    gap: 0px; 
   }
   
   .features .features-grid img {
-    max-width: 16.6666666667%; /* Adjust image size as needed */
+    max-width: 16.6666666667%; 
     height: auto;
   }
   
-  /* Responsive adjustments */
+  
 @media (max-width: 768px) {
     .features .features-grid {
-      flex-wrap: wrap; /* Allow wrapping on smaller screens */
+      flex-wrap: wrap; 
     }
   
     .features .features-grid img {
-      max-width: 50%; /* 2 images per row on smaller screens */
+      max-width: 50%; 
     }
   }

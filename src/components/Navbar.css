@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 
-
-/* src/components/Navbar.css */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color:#6F8EAD ; /* Initial background color (white) */
-    color: #000; /* Text color (black) */
+    background-color:#6F8EAD ; 
+    color: #000; 
     font-weight: 600;
     font-family: 'Aldrich', 'sans-serif';
   }
@@ -24,7 +22,7 @@
   }
   
   .navbar .nav-links a {
-    color: #fff; /* Text color (black) */
+    color: #fff; 
     text-decoration: none;
     margin: 0 15px;
     position: relative;
@@ -33,7 +31,7 @@
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
-    1px 1px 0 #000; /* Outline effect using text-shadow */
+    1px 1px 0 #000; 
     font-family: 'Aldrich', 'sans-serif';
   }
   
@@ -45,7 +43,7 @@
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #000; /* Underline color (black) */
+    background-color: #000; 
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
   }
@@ -61,7 +59,7 @@
   }
   
   .navbar .nav-icons a {
-    color: #000; /* Text color (black) */
+    color: #000; 
     text-decoration: none;
     margin: 0 10px;
     font-family: 'Bari Sans', sans-serif;
@@ -73,7 +71,7 @@
     src: url('../fonts/Aldrich-Regular.ttf');
   }
   
-  /* Responsive adjustments */
+
   @media (max-width: 768px) {
     .navbar {
       flex-direction: column;
