@@ -3,11 +3,11 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppButton = () => {
   // Replace with your friend's WhatsApp number (include country code, no +, no spaces)
-  const whatsappNumber = '0823114868';
-  const message = 'Hello! I would like to place an order.'; // Optional: Pre-fill a message
+  const whatsappNumber = '27823114868';
+  
 
   const handleWhatsAppClick = () => {
-    window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/${whatsappNumber}`, '_blank');
   };
 
   return (
