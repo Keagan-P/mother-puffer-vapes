@@ -73,28 +73,29 @@
 
 @media (max-width: 768px) {
   .navbar {
-    /* Keep flex-direction: row (default) or explicitly set it */
     flex-direction: row;
-    justify-content: space-between; /* Maintain spacing */
-    align-items: center; /* Keep vertical alignment */
-    padding: 10px; /* Adjust padding for smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px; /* Reduced horizontal padding */
   }
 
   .nav-links {
-    /* Keep flex-direction: row */
     flex-direction: row;
-    align-items: center; /* Align items vertically in the row */
-    margin-top: 0; /* Remove the top margin */
-    /* You might need to adjust spacing between links on smaller screens */
+    align-items: center;
+    margin-top: 0;
   }
 
   .nav-links a {
-    margin: 0 10px; /* Adjust horizontal margin */
-    font-size: 1rem; /* Consider reducing font size */
+    margin: 0 5px; /* Reduced horizontal margin */
+    font-size: 1rem;
   }
 
   .nav-icons {
-    margin-top: 0; /* Remove the top margin */
-    /* Adjust spacing between icons if needed */
+    margin-top: 0;
+  }
+
+  .nav-icons a {
+    margin: 0 5px; /* Reduced horizontal margin */
+    font-size: 1rem; /* Adjust icon size if needed */
   }
 }
