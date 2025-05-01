@@ -1,0 +1,12 @@
+/* src/App.css (Optional: Add global styles) */
+.body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to bottom, #1a1a1a, #000);
+  animation: bg-pulse 5s infinite alternate;
+}
+
+@keyframes bg-pulse {
+  from { background: linear-gradient(to bottom, #1a1a1a, #000);}
+  to {background: linear-gradient(to bottom, #000, #1a1a1a);}
+}
