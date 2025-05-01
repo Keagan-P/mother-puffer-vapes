@@ -76,18 +76,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5px; /* Reduced horizontal padding */
+    padding: 10px 5px;
   }
 
   .nav-links {
     flex-direction: row;
     align-items: center;
     margin-top: 0;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+    padding-bottom: 10px; /* Add some padding for scroll indicator */
   }
 
   .nav-links a {
-    margin: 0 5px; /* Reduced horizontal margin */
-    font-size: 1rem;
+    margin: 0 8px; /* Adjust spacing for scrolling */
+    font-size: 0.9rem;
   }
 
   .nav-icons {
@@ -95,7 +98,7 @@
   }
 
   .nav-icons a {
-    margin: 0 5px; /* Reduced horizontal margin */
-    font-size: 1rem; /* Adjust icon size if needed */
+    margin: 0 5px;
+    font-size: 0.9rem;
   }
 }
