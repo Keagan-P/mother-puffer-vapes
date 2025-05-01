@@ -1,94 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color:#6F8EAD ; 
-    color: #000; 
-    font-weight: 600;
-    font-family: 'Aldrich', 'sans-serif';
-  }
-  
-  .navbar .logo img {
-    max-height: 80px;
-    margin-right: 10px;
-  }
-  
-  .navbar .nav-links {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar .nav-links a {
-    color: #fff; 
-    text-decoration: none;
-    margin: 0 15px;
-    position: relative;
-    font-size: 1.2rem;
-    text-shadow: 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color:#6F8EAD ;
+  color: #000;
+  font-weight: 600;
+  font-family: 'Aldrich', 'sans-serif';
+}
+
+.navbar .logo img {
+  max-height: 80px;
+  margin-right: 10px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  position: relative;
+  font-size: 1.2rem;
+  text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
-    1px 1px 0 #000; 
-    font-family: 'Aldrich', 'sans-serif';
-  }
-  
-  .navbar .nav-links a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background-color: #000; 
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-out;
-  }
-  
-  .navbar .nav-links a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  
-  .navbar .nav-icons {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar .nav-icons a {
-    color: #000; 
-    text-decoration: none;
-    margin: 0 10px;
-    font-family: 'Bari Sans', sans-serif;
-    font-weight: 600;
+    1px 1px 0 #000;
+  font-family: 'Aldrich', 'sans-serif';
+}
+
+.navbar .nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.navbar .nav-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbar .nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-icons a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 10px;
+  font-family: 'Bari Sans', sans-serif;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: aldrich-regular;
+  src: url('../fonts/Aldrich-Regular.ttf');
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    /* Keep flex-direction: row (default) or explicitly set it */
+    flex-direction: row;
+    justify-content: space-between; /* Maintain spacing */
+    align-items: center; /* Keep vertical alignment */
+    padding: 10px; /* Adjust padding for smaller screens */
   }
 
-  @font-face {
-    font-family: aldrich-regular;
-    src: url('../fonts/Aldrich-Regular.ttf');
+  .nav-links {
+    /* Keep flex-direction: row */
+    flex-direction: row;
+    align-items: center; /* Align items vertically in the row */
+    margin-top: 0; /* Remove the top margin */
+    /* You might need to adjust spacing between links on smaller screens */
   }
-  
 
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .nav-links {
-      flex-direction: column;
-      align-items: flex-start;
-      margin-top: 10px;
-    }
-  
-    .nav-links a {
-      margin: 5px 0;
-    }
-  
-    .nav-icons {
-      margin-top: 10px;
-    }
+  .nav-links a {
+    margin: 0 10px; /* Adjust horizontal margin */
+    font-size: 1rem; /* Consider reducing font size */
   }
+
+  .nav-icons {
+    margin-top: 0; /* Remove the top margin */
+    /* Adjust spacing between icons if needed */
+  }
+}
